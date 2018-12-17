@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0., 10.)
+y = (np.sin(x))/x
+plt.plot(x, y,"r",label="sin(x)")
+plt.plot(x, y,"r-o",label="sin(x)")
+plt.savefig('fonct.pdf')
+plt.xlabel("abscisses")
+plt.ylabel("ordonnees")
+plt.title("sin(x)/x")
+plt.legend()
+plt.show()
